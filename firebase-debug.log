@@ -1,0 +1,75 @@
+[debug] [2023-10-27T19:55:03.568Z] ----------------------------------------------------------------------
+[debug] [2023-10-27T19:55:03.569Z] Command:       /Users/bart_budak/.nvm/versions/node/v18.18.2/bin/node /Users/bart_budak/.nvm/versions/node/v18.18.2/bin/firebase deploy
+[debug] [2023-10-27T19:55:03.570Z] CLI Version:   12.7.0
+[debug] [2023-10-27T19:55:03.570Z] Platform:      darwin
+[debug] [2023-10-27T19:55:03.570Z] Node Version:  v18.18.2
+[debug] [2023-10-27T19:55:03.572Z] Time:          Fri Oct 27 2023 15:55:03 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-10-27T19:55:03.572Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-27T19:55:03.656Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-27T19:55:03.656Z] > authorizing via signed-in user (bartoszbudak@gmail.com)
+[debug] [2023-10-27T19:55:03.657Z] [iam] checking project platycertified for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-10-27T19:55:03.659Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/platycertified:testIamPermissions [none]
+[debug] [2023-10-27T19:55:03.659Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/platycertified:testIamPermissions x-goog-quota-user=projects/platycertified
+[debug] [2023-10-27T19:55:03.659Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/platycertified:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-27T19:55:03.897Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/platycertified:testIamPermissions 200
+[debug] [2023-10-27T19:55:03.897Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/platycertified:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-27T19:55:03.898Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/platycertified [none]
+[debug] [2023-10-27T19:55:04.201Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/platycertified 200
+[debug] [2023-10-27T19:55:04.201Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/platycertified {"projectId":"platycertified","projectNumber":"341861339606","displayName":"platycertified","name":"projects/platycertified","resources":{"hostingSite":"platycertified","realtimeDatabaseInstance":"platycertified-default-rtdb"},"state":"ACTIVE","etag":"1_e6f234bc-d0b9-4f96-96f6-5b399df398f4"}
+[debug] [2023-10-27T19:55:09.971Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/platycertified/sites pageToken=&pageSize=10
+[debug] [2023-10-27T19:55:10.892Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/platycertified/sites 200
+[debug] [2023-10-27T19:55:10.892Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/platycertified/sites {"sites":[{"name":"projects/platycertified/sites/platycertified","defaultUrl":"https://platycertified.web.app","appId":"1:341861339606:web:84ab930f24e31d80d1d477","type":"DEFAULT_SITE"}]}
+[debug] [2023-10-27T19:55:10.892Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:341861339606:web:84ab930f24e31d80d1d477/config [none]
+[debug] [2023-10-27T19:55:11.491Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:341861339606:web:84ab930f24e31d80d1d477/config 200
+[debug] [2023-10-27T19:55:11.491Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:341861339606:web:84ab930f24e31d80d1d477/config {"projectId":"platycertified","appId":"1:341861339606:web:84ab930f24e31d80d1d477","databaseURL":"https://platycertified-default-rtdb.firebaseio.com","storageBucket":"platycertified.appspot.com","apiKey":"AIzaSyC9uLUcNru0G92Ghks9vg-C01tX41mLJfg","authDomain":"platycertified.firebaseapp.com","messagingSenderId":"341861339606","measurementId":"G-EXG711MS1Y"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]    ▲ Next.js 14.0.0
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+
+[info]    Generating static pages (3/5) 
+ ✓ Generating static pages (5/5) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    5.34 kB        92.8 kB
+└ ○ /_not-found                          883 B          88.3 kB
++ First Load JS shared by all            87.5 kB
+  ├ chunks/509-09107763c5d1af3a.js       32.3 kB
+  ├ chunks/bf276bdf-56c6d4492714e927.js  53.2 kB
+  ├ chunks/main-app-ca20e09f37e1e7fb.js  230 B
+  └ chunks/webpack-5bf3926fe3ce06d0.js   1.73 kB
+
+
+[info] 
+○  (Static)  prerendered as static HTML
+
+
